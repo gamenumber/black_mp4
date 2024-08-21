@@ -1,0 +1,15 @@
+* ffmpeg 사용방법 (windows)
+
+1. https://github.com/GyanD/codexffmpeg/releases/tag/2024-08-18-git-7e5410eadb 
+-> 이 링크로 이동해서
+"ffmpeg-2024-08-18-git-7e5410eadb-essentials_build.zip"파일을 받는다 (날짜가 달라질 수 있음)
+
+2. 압축을 해제한다.
+
+3. 시스템 환경변수에 등록한다. (exe파일 3개있는 bin의 경로를;)
+
+4.
+ffmpeg -i (파일이름).mp4 -vf "colorchannelmixer=.0:.0:.0:.0:.0:.0:.0:.0:.0:.0:.0:.0" -c:a copy output.mp4
+-> 이걸 windows powershell열어서 친다.
+
+5. 검은 화면 영상완성
